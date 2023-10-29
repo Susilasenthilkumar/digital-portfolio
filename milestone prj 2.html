@@ -1,0 +1,158 @@
+<head>
+    <title> Susila S portfolio</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        } 
+        header {
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                padding: 2rem 0;
+                position: relative;
+            }
+
+            .header-content h1{
+                font-size: 2.5rem;
+            }
+            .profile-picture { 
+                width: 100px;
+                height: 100px;
+                border-radius: 75%;
+                object-fit: cover;
+                position: absolute;
+                top: 50px;
+                left: 100px;
+            }
+            nav{
+                background-color:black;
+                color: #fff;
+                text-align: center;
+            }
+
+            nav ul{ 
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul li{
+                display: inline;
+                margin: 0 20px;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .section-class {
+                background-color:rgb(224, 224, 235);
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 10px 5px 5px black;
+
+            }
+            ul{ 
+                list-style-type: lower-alpha;
+                padding-left: 20px;
+            }
+
+            footer{ 
+                text-align: center;
+                padding: 1rem 0;
+                background-color: black;
+                color: #fff;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="girls pic.jpg" alt="your profile picture"  class="profile-picture">
+            <h1>S.SUSILA</h1>
+            <p>'Ambition is to became a software developer'</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="#About">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skill">Skill</a></li>
+            <li><a href="#other skills">other skills</a></li>
+            <li><a href="#Project">Project</a></li>
+        </ul>
+    </nav>
+    <h1>About Me</h1>
+<p> Hello..! I'm susila from Thanjavur.Now I am pursuing my ug degree in Computer Science in Bon secours college for women,Thanjavur.I am 20 years old girl who is always passionate on dream jobs.Highly motivated and dedicated one who seeking a challenging job opportunity in a competitive environment that will motivated me to push my boundaries and expand my knowledge in my core field. By this opportunity I can able to show my abilities , strength and
+    kept my self shine with skills</p>
+</div>
+    </section>
+
+
+    <section id="Education"> 
+        <div class="section-class"> 
+            <h1>Education </h1>
+            <ul>
+                <li> 2021-2024  - Bon secours college for women,Thanjavur<br/>Bsc.cs.,</li>
+                <li> 2018-2019  -Regina caeli girls higher secondary school,Ammapet<br/>10th with 85.4%</li>
+                <li>2020-2021   -Regina caeli girls higher secondary school,Ammapet<br/>12th with 90.45%</li>
+            </ul>
+        </div>
+    </section >
+    <section id="Skill">
+        <div class=" section-class">
+             <h1> Skill</h1>
+             <ul>
+                <li>C,C++</li>
+                <li>DBMS-Mysql</li>
+                <li>HTML</li>
+                <li>PHP</li>
+                <li>Java</li>
+             </ul>
+             </div>
+    </section>
+    <section id="Other skills"> 
+        <div class="section-class">
+            <h1>Other skills</h1>
+            <ul>
+                <li>Ms office(word,ppt,excel)</li>
+                <li>google form creation</li>
+                <li>Web page templates creations by using AI tools</li>
+                <li>Barcode creation</li>
+                <li>problem solving skills in c and cpp.</li>
+                <li>fast typewriting skill.</li>
+                <li>good communication</li>
+                <li>Paper presentation skill.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Project">
+    <div class="section-class">
+            <h1>Project</h1>
+            <a href="Tribute page.html">Project</a>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <P>&copy;2023 Susila</P>
+         </footer>
+         <script> 
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click',function (e) { 
+                    e.preventDefault();
+                    const targetId= this.getAttribute('href').substring(1);
+                    const targetElement =document.getElementById(targetId);
+        
+                    if (targetElement) {
+                        window.scrollTo({
+                            top:targetElement.offsetTop,
+                            behavior:'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
